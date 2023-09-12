@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login , logout
 from django.contrib import messages
 # Create your views here.
@@ -10,7 +10,10 @@ def loginPage(request):
         if user is not None:
             login(request, user)
             messages.success(request,  "Successfull Login" )
-            return redirect('')
+            return redirect('govindadDash:dashboardPage')
+        else:
+            messages.error(request,  "Incorect Username or Password" )
+            return redirect('govindadDash:dashboardPage')
 
 
     else:
@@ -20,3 +23,9 @@ def loginPage(request):
         }
 
         return render (request, template_name, context)
+
+
+def logoutPage(request):
+    logout(request)
+    messages.success(request,  "Successfull Logout" )
+    return redirect('govindadUserAuth:loginPage')

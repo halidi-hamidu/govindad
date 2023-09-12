@@ -19,6 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('userAuth.urls', namespace = 'userAuth')),
-    path('job-cards', include('jobCards.urls', namespace = 'jobCards')),
+    path('', include('govindadUserAuth.urls', namespace = 'govindadUserAuth')),
+    path('dashboard/', include('govindadDash.urls', namespace = 'govindadDash')),
+    path('job-cards/', include('govindadJobsCard.urls', namespace = 'govindadJobsCard')),
 ]
