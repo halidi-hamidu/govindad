@@ -13,7 +13,7 @@ def loginPage(request):
             return redirect('govindadDash:dashboardPage')
         else:
             messages.error(request,  "Incorect Username or Password" )
-            return redirect('govindadDash:dashboardPage')
+            return redirect('govindadUserAuth:loginPage')
 
 
     else:
