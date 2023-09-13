@@ -183,17 +183,15 @@
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">  Job Card Form </h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
        
-      <button class="btn btn-outline-success  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" >
-        Customer Informations
-      </button>
     
-        <div style="min-height: 120px;">
-          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    
+        <div style="min-height: 100px;">
+        
             <div class="card card-body" style="width: 100%">
               <form class="row g-3">
                 <div class="col-12">
@@ -219,31 +217,38 @@
 
                 <div class="col-md-12">
                   <label for="numberOfColours" class="form-label">Printing</label>
-                  <div class="form-floating mb-3">
+                  <div class="form-floating">
                     
-                    <select class="form-select" id="floatingSelect" >
-                      <option selected>Both side</option>
-                      <option value="1">One side</option>
-                      <option value="2">Coating / Lamination</option>
+                    <select class="form-select" id="printing">
+                      <option value="....">...</option>
+                      <option value="Both side">Both side</option>
+                      <option value="One side">One side</option>
+                      <option value="Coating or Lamination">Coating / Lamination</option>
                     </select>
                   </div>
                 </div>
                 
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                  <button type="reset" class="btn btn-secondary">Reset</button>
+                <div class="text-left">
+                  <button type="submit" class="btn btn-outline-success">Submit</button>
+                  <button type="reset" class="btn btn-outline-secondary">Reset</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
-      </div>
+ 
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Understood</button>
       </div>
     </div>
   </div>
 </div>
 
+
+<script>
+  $(document).ready(function() {
+    $('#printing').select2();
+});
+</script>
 {% endblock %}
