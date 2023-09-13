@@ -4,5 +4,5 @@ from . import views
 
 app_name = 'govindadJobsCard'
 urlpatterns = [
- path('', views.jobsCardsPage, name ='jobsCardsPage')
+ path('', views.newJobCardPage, name ='newJobCardPage')
 ]

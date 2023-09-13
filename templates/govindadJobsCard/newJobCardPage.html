@@ -1,0 +1,249 @@
+{% extends '../base.html' %}
+{% load static %}
+{% block title %} new Job  card  {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="pagetitle">
+        <h1>Job Cards</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item">Job Cards</li>
+            <li class="breadcrumb-item active">new card</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <!-- pending card -->
+    <div class="col-xxl-4 col-md-6">
+      <div class="card info-card sales-card">
+        <div class="card-body">
+          <h5 class="card-title">Pending cards <span></span></h5>
+
+          <div class="d-flex align-items-center">
+            <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-card-list" style="font-size: 50px;"></i>
+            </div>
+            <div class="ps-3">
+              <h6>145</h6>
+              <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span> -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Approved Cards -->
+    <div class="col-xxl-4 col-md-6">
+      <div class="card info-card revenue-card">
+
+       
+
+        <div class="card-body">
+          <h5 class="card-title">Approved cards <span></span></h5>
+
+          <div class="d-flex align-items-center">
+            <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-card-list" style="font-size: 50px;"></i>
+            </div>
+            <div class="ps-3">
+              <h6>145</h6>
+              <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span> -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- canceld Cards -->
+    <div class="col-xxl-4 col-xl-12">
+
+      <div class="card info-card customers-card">
+
+        <div class="card-body">
+          <h5 class="card-title">Canceld cards <span></span></h5>
+
+          <div class="d-flex align-items-center">
+            <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-card-list" style="font-size: 50px;"></i>
+            </div>
+            <div class="ps-3">
+              <h6>145</h6>
+              <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+           
+          
+              <section class="section">
+                <div class="row">
+                  <div class="col-lg-12">
+          
+                    <div class="card">
+                      <div class="card-body">
+                       <div class="buttons_title-section" style="display: flex;justify-content: space-between;">
+                        <div class="title">
+                          <h5 class="card-title">Job Cards</h5>
+                        </div>
+                        <div class="button_section p-3">
+                          <button class=" btn btn-outline-primary"  type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-plus-lg"></i> new Card</button>
+                        </div>
+                       </div>
+                  
+          
+                        <!-- Table with stripped rows -->
+                        <table class="table datatable" id="example">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Position</th>
+                              <th scope="col">Age</th>
+                              <th scope="col">Start Date</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Brandon Jacob</td>
+                              <td>Designer</td>
+                              <td>28</td>
+                              <td>2016-05-25</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Bridie Kessler</td>
+                              <td>Developer</td>
+                              <td>35</td>
+                              <td>2014-12-05</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Ashleigh Langosh</td>
+                              <td>Finance</td>
+                              <td>45</td>
+                              <td>2011-08-12</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Angus Grady</td>
+                              <td>HR</td>
+                              <td>34</td>
+                              <td>2012-06-11</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>Raheem Lehner</td>
+                              <td>Dynamic Division Officer</td>
+                              <td>47</td>
+                              <td>2011-04-19</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!-- End Table with stripped rows -->
+          
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </section>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+      <button class="btn btn-outline-success  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" >
+        Customer Informations
+      </button>
+    
+        <div style="min-height: 120px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 100%">
+              <form class="row g-3">
+                <div class="col-12">
+                  <label for="inputNanme4" class="form-label">Customer Name</label>
+                  <input type="text" class="form-control" id="inputNanme4">
+                </div>
+                <div class="col-12">
+                  <label for="inputNanme4" class="form-label">Job Description</label>
+                  <textarea type="text" class="form-control" id="jobDescriptions" name="jobDescriptions"> </textarea>
+                </div>
+                <div class="col-12">
+                  <label for="finishedSize" class="form-label">Finished Size</label>
+                  <input type="text" class="form-control" id="finishedSize" name="finishedSize">
+                </div>
+                <div class="col-12">
+                  <label for="numberOfPage" class="form-label">No. Pages</label>
+                  <input type="number" class="form-control" id="numberOfPage" name="numberOfPage">
+                </div>
+                <div class="col-12">
+                  <label for="numberOfColours" class="form-label">No. Colours</label>
+                  <input type="number" class="form-control" id="numberOfColours" name="numberOfColours">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="numberOfColours" class="form-label">Printing</label>
+                  <div class="form-floating mb-3">
+                    
+                    <select class="form-select" id="floatingSelect" >
+                      <option selected>Both side</option>
+                      <option value="1">One side</option>
+                      <option value="2">Coating / Lamination</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
